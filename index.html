@@ -43,19 +43,357 @@
 
         <section>
           <section>
+            <h2>A diversion: Hegel</h2>
+          </section>
+          <section>
+            <h2>"How to fake your way through Hegel"</h2>
+          </section>
+          <section>
+            <h2>Dialectics</h2>
+          </section>
+          <section>
+            <h2>Thesis -> Antithesis -> Synthesis</h2>
+          </section>
+          <section>
+            <h2>(A v ~A) & (A ∧ ~A)</h2>
+            <p>not</p>
+            <h2>A ∧ ~A</h2>
+            <p>or</p>
+            <h2>A v ~A</h2>
+          </section>
+          <section>
+            <h2>Cat behavior</h2>
+            <h2>Cuddly, loving, and absolutely not caring</h2>
+          </section>
+          <section>
+            <h2>Living & dying</h2>
           </section>
         </section>
         <section>
           <section>
+            <h2>Thesis: Ruby</h2>
+          </section>
+          <section>
+            <h2>松本行弘 (Matz)</h2>
+          </section>
+          <section>
+<pre><code data-trim>
+Ruby is a language designed in the following steps:
+
+  * take a simple lisp language (like one prior to CL).
+  * remove macros, s-expression.
+  * add simple object system (much simpler than CLOS).
+  * add blocks, inspired by higher order functions.
+  * add methods found in Smalltalk.
+  * add functionality found in Perl (in OO way).
+
+So, Ruby was a Lisp originally, in theory.
+Let's call it MatzLisp from now on. ;-)
+</code></pre>
+          </section>
+          <section>
+<p>It would be understandable if Lisp’s charm had not been accepted by everyone
+in a year or two, but for 50+ years it hasn’t reached the mainstream, could it
+be because it fundamentally does not match our expectation? There is a huge
+difference between human friendly languages and languages that have smallest,
+cleanest cores, and I am afraid the gap between them might not close even in a
+hundred years. As for what future programming languages should look like, I
+think they should have a runtime model similar to that of Lisp and be easily
+understandable by humans. All of a sudden, Ruby looks a lot closer to that,
+doesn’t it?</p>
+          </section>
+          <section>
+            <h2>Ruby: simple<br />but not easy</h2>
+          </section>
+          <section>
+            <h2>Ruby "magic"</h2>
+          </section>
+          <section>
+            <h2>Ruby is actually<br />very, very simple.</h2>
+          </section>
+          <section>
+            <p>Everything<sup>*</sup> is an object.<br />Even objects. And classes.</p>
+<pre><code data-trim>
+class Class
+  # ...
+end
+
+Foo = Class.new
+Bar = Class.new(Foo)
+</code></pre>
+          </section>
+          <section>
+            <p>Everything<sup>*</sup> is an object.<br />Even objects. And classes.</p>
+<pre><code data-trim>
+class Foo
+  def hello
+    puts "hello"
+  end
+end
+
+Foo.new.hello
+# =&gt; hello
+</code></pre>
+          </section>
+          <section>
+            <p>Everything<sup>*</sup> is an object.<br />Even objects. And classes.</p>
+<pre><code data-trim>
+o = Object.new
+
+def o.hello
+  puts "hello"
+end
+
+o.hello
+# =&gt; hello
+</code></pre>
+          </section>
+          <section>
+            <h3>Ruby 2.1: method definitions</h3>
+<pre><code data-trim>
+# old
+def foo() end # =&gt; nil
+
+# new
+def foo() end # =&gt; :foo
+</code></pre>
+          </section>
+          <section>
+            <h3>Ruby 2.1: method definitions</h3>
+<pre><code data-trim>
+# old
+class Foo
+  def foo; end
+  private :foo
+
+  def bar; end
+  private :bar
+end
+
+# new
+class Foo
+  private def foo; end
+  private def bar; end
+end
+</code></pre>
+          </section>
+          <section>
+            <h2>Jim Weirich</h2>
+          </section>
+          <section>
+            <h2>Rake</h2>
+<pre><code data-trim>
+directory "tmp"
+
+file "hello.tmp" =&gt; "tmp" do
+  sh "echo 'Hello' &gt;&gt; 'tmp/hello.tmp'"
+end
+</code></pre>
+          </section>
+          <section>
+            <h2>Rspec-given</h2>
+<pre><code data-trim>
+Given(:stack) { stack_with(initial_contents) }
+Invariant { stack.empty? == (stack.depth == 0) }
+
+context "with no items" do
+  Given(:initial_contents) { [] }
+  Then { stack.depth == 0 }
+end
+</code></pre>
+          </section>
+          <section>
+            <h2>Ukulele :)</h2>
+          </section>
+          <section>
+            <h2>_why</h2>
+          </section>
+          <section>
+            <h2>Poigant Guide</h2>
+            <img src="http://mislav.uniqpath.com/poignant-guide/images/2007-cover-shut.jpg" alt="cover image" />
+          </section>
+          <section>
+            <h2>Unholy</h2>
+          </section>
+          <section>
+<pre>
+      .ooo
+     'OOOo
+ ~ p ooOOOo tion ~
+     .OOO
+      oO      %% a little
+        Oo    fast language.
+       'O
+       (o)
+   ___/ /          
+  /    \ 
+ /v^  `  ,
+(...v/v^/
+ \../::/
+  \/::/
+</pre>
+          </section>
+          <section>
+            <h2>Camping</h2>
+          </section>
+          <section>
+            <h2>Yusuke Endoh</h2>
+          </section>
+          <section>
+<pre><code data-trim>
+v=0000;eval$s=%q~d=%!^Lcf&lt;LK8,                  _@7gj*LJ=c5nM)Tp1g0%Xv.,S[&lt;&gt;YoP
+4ZojjV)O&gt;qIH1/n[|2yE[&gt;:ieC       &quot;%.#%  :::##&quot;       97N-A&amp;Kj_K_&gt;&lt;wS5rtWk@*a+Y5
+yH?b[F^e7C/56j|pmRe+:)B     &quot;##%      ::##########&quot;     O98(Zh)'Iof*nm.,$C5Nyt=
+PPu01Avw^&lt;IiQ=5$'D-y?    &quot;##:         ###############&quot;    g6`YT+qLw9k^ch|K'),tc
+6ygIL8xI#LNz3v}T=4W    &quot;#            #.   .####:#######&quot;    lL27FZ0ij)7TQCI)P7u
+}RT5-iJbbG5P-DHB&lt;.   &quot;              ##### # :############&quot;   R,YvZ_rnv6ky-G+4U'
+$*are@b4U351Q-ug5   &quot;              #######################&quot;   00x8RR%`Om7VDp4M5
+PFixrPvl&amp;&lt;p[]1IJ   &quot;              ############:####  %#####&quot;   EGgDt8Lm#;bc4zS^
+y]0`_PstfUxOC(q   &quot;              .#############:##%   .##  .&quot;   /,}.YOIFj(k&amp;q_V
+zcaAi?]^lCVYp!;  &quot; %%            .################.     #.   &quot;  ;s=&quot;v=%04o;ev&quot;%
+(;v=(v-($*+[45,  &quot;:####:          :##############%       :   &quot;  ])[n=0].to_i;)%
+360)+&quot;al$s=%q#{  &quot;%######.              #########            &quot;  ;;&quot;%c&quot;%126+$s&lt;&lt;
+126}&quot;;d.gsub!(/  &quot;##########.           #######%             &quot;  |\s|&quot;.*&quot;/,&quot;&quot;);;
+require&quot;zlib&quot;||  &quot;###########           :######.             &quot;  ;d=d.unpack&quot;C*&quot;
+d.map{|c|n=(n||  &quot;:#########:           .######: .           &quot;  )*90+(c-2)%91};
+e=[&quot;%x&quot;%n].pack   &quot; :#######%           :###### #:          &quot;   &amp;&amp;&quot;H*&quot;;e=Zlib::
+Inflate.inflate(   &quot;  ######%           .####% ::          &quot;   &amp;&amp;e).unpack(&quot;b*&quot;
+)[0];22.times{|y|   &quot;  ####%             %###             &quot;   ;w=(Math.sqrt(1-(
+(y*2.0-21)/22)**(;   &quot; .###:             .#%             &quot;   ;2))*23).floor;(w*
+2-1).times{|x|u=(e+    &quot; %##                           &quot;    )[y*z=360,z]*2;u=u[
+90*x/w+v+90,90/w];s[(    &quot; #.                        &quot;    ;y*80)+120-w+x]=(&quot;&quot;&lt;&lt;
+32&lt;&lt;&quot;.:%#&quot;)[4*u.count((     &quot; .                   &quot;     ;&quot;0&quot;))/u.size]}};;puts\
+s+&quot;;_ The Qlobe#{&quot; &quot;*18+ (       &quot;#  :#######&quot;       ;&quot;Copyright(C).Yusuke End\
+oh, 2010&quot;)}&quot;;exit~;_ The Qlobe                  Copyright(C).Yusuke Endoh, 2010
+</code></pre>
+          </section>
+          <section>
+            <img src="qlobe.gif" alt="qlobe animated" />
+          </section>
+          <section>
+            <h2>Ruby Bug #5400: Remove<br />flip-flops in 2.0</h2>
+          </section>
+          <section>
+<p>
+Hello,<br />
+I'm one of the few users of flip-flop.</p>
+<pre><code data-trim>
+W, H = 44, 54
+c = 7 + 42 * W
+a = [0] * W * H
+g = d = 0
+f = proc do |n|
+  a[c] += 1
+  o = a.map {|z| " :#"[z, 1] * 2 }.join.scan(/.{#{W * 2}}/)
+  puts "\f" + o.map {|l| l.rstrip }.join("\n")
+  sleep 0.005
+  d += 1 - 2 * ((g ^= 1 &lt;&lt; n) &gt;&gt; n)
+  c += [1, W, -1, -W][d %= 4]
+end
+1024.times do
+  !!(!!(!!(!!(!!(!!(!!(!!(!!(true...
+    f[0])...f[1])...f[2])...
+    f[3])...f[4])...f[5])...
+    f[6])...f[7])...f[8])
+end
+</code></pre>
+
+<p>Sorry for off-topic :-)</p>
+<p>I have no objection to deletion, but I'm just curious.
+Why do you want to delete it aggressively?</p>
+</code></pre>
+          </section>
+          <section>
+            <h2>Aaron Patterson</h2>
+          </section>
+          <section>
+            <p>Gorbachev Puff-Puff Thunderhorse</p>
+            <img src="gorby.jpg" alt="gorby" />
+          </section>
+          <section>
+            <p>SEA-TAC Google Youtube Facebook</p>
+            <img src="sea-tac.jpg" alt="SEA-TAC" />
+          </section>
+          <section>
+            <h2>phuby</h2>
+<pre><code data-trim>
+php = Phuby::Runtime.new
+php.start
+
+php.eval('$hello = "world"')
+assert_equal "world", php['hello']
+
+php.stop
+</code></pre>
+          </section>
+          <section>
+            <h2>Journey</h2>
+          </section>
+          <section>
+            <h2>ActiveRecord</h2>
+          </section>
+          <section>
+            <h2>MiniTest::Emoji</h2>
+          </section>
+          <section>
+            <h2>Fiddle</h2>
+<pre><code data-trim>
+module IAmAHorriblePerson
+  def unset flag
+    value = _wrap self
+    flags = 8.times.map { |i| value[i] }.pack('C8').unpack('Q').first
+    [flags &amp; ~flag].pack('Q').unpack('C8').each_with_index { |n,i|value[i] = n }
+  end
+   
+  def class= k
+    value = _wrap self
+    [k.object_id&lt;&lt;1].pack('Q').unpack('C8').each_with_index {|n,i|value[i+8]=n}
+  end
+   
+  def _wrap klass; Fiddle::Pointer.new Fiddle.dlwrap klass; end
+  def unfreeze!; unset(1 &lt;&lt; 11); end
+  def untaint!; unset(1 &lt;&lt; 8); end
+end
+
+class Object; include IAmAHorriblePerson; end
+</code></pre>
+          </section>
+          <section>
+            <h2>Fiddle</h2>
+<pre><code data-trim>
+x = Object.new
+p x.class # =&gt; Object
+x.class = Class.new { def lol; 'lol'; end }
+p x.class # =&gt; #<Class:0x007fccbb06df80>
+p x.lol # =&gt; "lol"
+</code></pre>
           </section>
         </section>
         <section>
           <section>
+            <h2>Antithesis: Rails</h2>
+          </section>
+          <section>
+            <h2>Ruby is wildly creative.</h2>
+          </section>
+          <section>
+            <h2>Rails is built on conventions.</h2>
+          </section>
+          <section>
+            <h2>Conventions are the opposite of creative.</h2>
+          </section>
+          <section>
+            <h2>Rails isn't creative?</h2>
+          </section>
+        </section>
+        <section>
+          <section>
+            <h2>Synthesis?</h2>
           </section>
         </section>
         <section>
           <h1>Thanks! &lt;3</h3>
-          <h3>The Art of Ruby on Rails</h3>
+          <h3>The Art of Ruby</h3>
           <p>
           By <a href="http://steveklabnik.com">Steve Klabnik</a>
           </p>
